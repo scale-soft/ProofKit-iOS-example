@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92B55C692FBEFE8E0087413C /* ProofKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B55C682FBEFE8E0087413C /* ProofKit.xcframework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		92B55BAF2FBB0C0F0087413C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		92B55B9C2FBB0C0D0087413C /* ProofKit-iOS-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProofKit-iOS-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B55BAE2FBB0C0F0087413C /* ProofKit-iOS-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProofKit-iOS-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B55BB82FBB0C0F0087413C /* ProofKit-iOS-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProofKit-iOS-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B55C682FBEFE8E0087413C /* ProofKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ProofKit.xcframework; path = "../ProofKit-iOS/release/ProofKit.xcframework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B55C692FBEFE8E0087413C /* ProofKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 				92B55BB12FBB0C0F0087413C /* ProofKit-iOS-exampleTests */,
 				92B55BBB2FBB0C0F0087413C /* ProofKit-iOS-exampleUITests */,
 				92B55B9D2FBB0C0D0087413C /* Products */,
+				92B55C682FBEFE8E0087413C /* ProofKit.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,11 +407,17 @@
 				DEVELOPMENT_TEAM = PSW9KBQGUJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ProofKit needs camera access to capture cryptographically signed photos and videos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is used to securely sign photos and videos with your device key.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ProofKit can embed a verified GPS coordinate in each signed capture.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ProofKit needs microphone access for signed video recording.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ProofKit needs photo library access to import files for verification.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,11 +445,17 @@
 				DEVELOPMENT_TEAM = PSW9KBQGUJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ProofKit needs camera access to capture cryptographically signed photos and videos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is used to securely sign photos and videos with your device key.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ProofKit can embed a verified GPS coordinate in each signed capture.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ProofKit needs microphone access for signed video recording.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ProofKit needs photo library access to import files for verification.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

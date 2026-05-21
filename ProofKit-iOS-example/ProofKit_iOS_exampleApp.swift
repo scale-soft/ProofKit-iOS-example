@@ -1,21 +1,14 @@
-//
-//  ProofKit_iOS_exampleApp.swift
-//  ProofKit-iOS-example
-//
-//  Created by Georgi Popov on 18.05.26.
-//
-
 import SwiftUI
-import CoreData
+import ProofKit
 
 @main
 struct ProofKit_iOS_exampleApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var appState = AppState()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(appState)
         }
     }
 }
